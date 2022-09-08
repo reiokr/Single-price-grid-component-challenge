@@ -78,6 +78,10 @@ body {
   height: 40px;
   box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.2);
 }
+.container .bottom-section .bottom-left-section button:hover {
+  background-color: hsla(71deg, 73%, 54%, 0.8);
+  cursor: pointer;
+}
 .container .bottom-section .bottom-right-section {
   padding: 40px;
   box-sizing: border-box;
