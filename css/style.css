@@ -1,0 +1,111 @@
+@import url(https://fonts.googleapis.com/css?family=Karla:regular,700);
+body {
+  margin: 0;
+  font-size: 16px;
+  background-color: #f0f0f0;
+  font-family: "Karla", Verdana, Arial, Helvetica, sans-ser;
+}
+
+.container {
+  background-color: white;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 7px;
+  box-shadow: -2px -2px 6px 1px rgba(114, 114, 114, 0.1), 2px 2px 6px 1px rgba(77, 77, 77, 0.1);
+}
+.container h2,
+.container h4 {
+  margin: 0 0 20px 0;
+  font-weight: 700;
+}
+.container h2 {
+  color: #4eb4b5;
+}
+.container .top-section {
+  box-sizing: border-box;
+  padding: 40px;
+}
+.container .top-section h4 {
+  color: hsl(71deg, 73%, 54%);
+  margin-bottom: 10px;
+}
+.container .top-section p {
+  color: rgb(174, 174, 174);
+  margin: 5px 0;
+}
+.container .bottom-section {
+  color: #fff;
+  display: flex;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+.container .bottom-section .bottom-left-section {
+  box-sizing: border-box;
+  padding: 40px;
+  flex: 50%;
+  background-color: hsl(179deg, 62%, 43%);
+  border-bottom-left-radius: inherit;
+}
+.container .bottom-section .bottom-left-section .pricing-container {
+  display: flex;
+  align-items: center;
+}
+.container .bottom-section .bottom-left-section .pricing-container span:last-of-type {
+  color: hsl(204deg, 43%, 93%);
+  font-size: 0.9rem;
+  margin-left: 10px;
+}
+.container .bottom-section .bottom-left-section .pricing-container span:first-of-type {
+  font-size: 2rem;
+  color: white;
+}
+.container .bottom-section .bottom-left-section p {
+  white-space: nowrap;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.container .bottom-section .bottom-left-section button {
+  background-color: hsl(71deg, 73%, 54%);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  height: 40px;
+  box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.2);
+}
+.container .bottom-section .bottom-right-section {
+  padding: 40px;
+  box-sizing: border-box;
+  flex: 50%;
+  background-color: #4abebd;
+  border-bottom-right-radius: inherit;
+}
+.container .bottom-section .bottom-right-section ul {
+  margin: 0;
+  padding: 0;
+}
+.container .bottom-section .bottom-right-section ul li {
+  list-style-type: none;
+  color: hsl(204deg, 43%, 93%);
+  line-height: 1.2;
+}
+
+@media screen and (max-width: 540px) {
+  .container {
+    margin-top: 5%;
+  }
+  .container .bottom-section {
+    flex-direction: column;
+  }
+  .container .bottom-section .bottom-left-section {
+    border-radius: 0;
+  }
+  .container .bottom-section .bottom-right-section {
+    border-bottom-left-radius: inherit;
+  }
+}
